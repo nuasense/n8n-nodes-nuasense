@@ -1,0 +1,63 @@
+{
+    "name": "n8n-nodes-nuasense",
+    "version": "0.1.0",
+    "description": "NuaSense for n8n: frost, watering and spray advice from your weather station, sending station readings to NuaSense, and East African farm and market data (prices, satellite demand, food security).",
+    "license": "MIT",
+    "homepage": "https://github.com/nuasense/n8n-nodes-nuasense#readme",
+    "keywords": [
+        "n8n-community-node-package",
+        "n8n",
+        "nuasense",
+        "weather-station",
+        "agriculture",
+        "east-africa",
+        "kenya",
+        "market-data"
+    ],
+    "author": {
+        "name": "NuaSense",
+        "email": "info@nuasense.com",
+        "url": "https://nuasense.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nuasense/n8n-nodes-nuasense.git"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease",
+        "catalog": "node scripts/generate-catalog.cjs",
+        "test": "node --test test/*.test.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "strict": true,
+        "credentials": [
+            "dist/credentials/NuaSenseApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/NuaSense/NuaSense.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "*",
+        "eslint": "9.32.0",
+        "prettier": "3.6.2",
+        "release-it": "^21.1.0",
+        "typescript": "5.9.2"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    },
+    "bugs": {
+        "url": "https://github.com/nuasense/n8n-nodes-nuasense/issues"
+    }
+}

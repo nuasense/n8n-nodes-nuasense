@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-nuasense.nuaSense",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage", "Miscellaneous"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/nuasense/n8n-nodes-nuasense#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/nuasense/n8n-nodes-nuasense#readme"
+			}
+		]
+	}
+}
