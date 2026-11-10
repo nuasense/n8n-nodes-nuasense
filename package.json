@@ -35,7 +35,8 @@
         "test": "node --test test/*.test.js"
     },
     "files": [
-        "dist"
+        "dist",
+        "!dist/tsconfig.tsbuildinfo"
     ],
     "n8n": {
         "n8nNodesApiVersion": 1,
