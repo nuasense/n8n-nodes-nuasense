@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-nuasense",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "NuaSense for n8n: frost, watering and spray advice from your weather station, sending station readings to NuaSense, and East African farm and market data (prices, satellite demand, food security).",
     "license": "MIT",
     "homepage": "https://github.com/nuasense/n8n-nodes-nuasense#readme",
